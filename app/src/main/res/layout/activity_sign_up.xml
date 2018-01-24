@@ -10,7 +10,7 @@
     tools:context="com.yuminakamura.insta.SignUpActivity">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -25,7 +25,7 @@
 
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -39,7 +39,7 @@
         />
 
     <EditText
-        android:id="@+id/signup_email"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -48,12 +48,12 @@
         android:layout_marginLeft="60dp"
         android:gravity="center_horizontal"
         android:padding="15dp"
-        android:hint="@string/username"
+        android:hint="@string/password"
         android:background="@drawable/text_border"
         />
 
     <EditText
-        android:id="@+id/signup_password"
+        android:id="@+id/confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
