@@ -27,6 +27,7 @@
         android:gravity="center_horizontal"
         android:padding="15dp"
         android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:background="@drawable/text_border"
         />
 
@@ -41,6 +42,7 @@
         android:layout_marginLeft="60dp"
         android:gravity="center_horizontal"
         android:padding="15dp"
+        android:inputType="textPassword"
         android:background="@drawable/text_border"
         android:hint="@string/password"
         />
