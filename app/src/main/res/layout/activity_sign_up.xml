@@ -71,5 +71,6 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:text="@string/signup"
+        android:textAllCaps="false"
         android:textColor="@color/white"/>
 </LinearLayout>
