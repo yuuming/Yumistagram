@@ -16,4 +16,10 @@
     //Profile page
     <string name="user_id">user id</string>
     <string name="profile">profile</string>
+
+    //Timeline page
+    <string name="number">0</string>
+    <string name="likes">Likes </string>
+    <string name="comments">Comments</string>
+
 </resources>

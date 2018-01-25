@@ -1,7 +1,9 @@
-package com.yuminakamura.insta;
+package com.yuminakamura.insta.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.yuminakamura.insta.R;
 
 public class SignInActivity extends AppCompatActivity {
 

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="com.yuminakamura.insta.SignUpActivity">
+    tools:context="com.yuminakamura.insta.activities.SignUpActivity">
 
     <EditText
         android:id="@+id/username"
