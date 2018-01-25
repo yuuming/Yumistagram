@@ -10,7 +10,7 @@
 
     //create account page
     <string name="username">Username</string>
-    <string name="confirm">Confirm</string>
+    <string name="confirm">Confirm Password</string>
 
 
     //Profile page
