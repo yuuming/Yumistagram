@@ -10,6 +10,6 @@ public class TimelineRecyclerViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.timeline_recyclerview);
+        setContentView(R.layout.activity_timeline_recyclerview);
     }
 }
