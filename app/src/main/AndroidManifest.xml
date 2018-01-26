@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SignUpActivity"></activity>
-        <activity android:name=".activities.TimelineRecyclerViewActivity">
-
-        </activity>
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.TimelineActivity" />
+        <activity android:name=".activities.FriendsActivity"></activity>
     </application>
 
 </manifest>
