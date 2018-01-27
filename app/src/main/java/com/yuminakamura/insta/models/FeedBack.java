@@ -5,27 +5,27 @@ package com.yuminakamura.insta.models;
  */
 
 public class FeedBack {
-    private int likes;
-    private int comments;
+    private String likes;
+    private String comments;
 
-    public FeedBack(int likes, int comments) {
+    public FeedBack(String likes, String comments) {
         this.likes = likes;
         this.comments = comments;
     }
 
-    public int getLikes() {
+    public String getLikes() {
         return likes;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes() {
         this.likes = likes;
     }
 
-    public int getComments() {
+    public String getComments() {
         return comments;
     }
 
-    public void setComments(int comments) {
+    public void setComments(String comments) {
         this.comments = comments;
     }
 }
