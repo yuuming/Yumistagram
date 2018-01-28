@@ -1,13 +1,15 @@
-package com.yuminakamura.insta;
+package com.yuminakamura.insta.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SignInActivity extends AppCompatActivity {
+import com.yuminakamura.insta.R;
+
+public class FriendsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_friends);
     }
 }

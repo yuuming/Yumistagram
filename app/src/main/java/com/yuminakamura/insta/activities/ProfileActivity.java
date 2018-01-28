@@ -1,13 +1,16 @@
-package com.yuminakamura.insta;
+package com.yuminakamura.insta.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SignUpActivity extends AppCompatActivity {
+import com.yuminakamura.insta.R;
+
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_profile);
+
     }
 }

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="com.yuminakamura.insta.SignInActivity">
+    tools:context="com.yuminakamura.insta.activities.MainActivity">
 
     <ImageView
         android:id="@+id/app_title"
@@ -48,7 +47,7 @@
         />
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/main_sign_in"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,7 +68,7 @@
         />
 
     <Button
-        android:id="@+id/sign_up"
+        android:id="@+id/main_sign_up"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

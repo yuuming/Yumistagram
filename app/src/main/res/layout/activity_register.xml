@@ -7,10 +7,10 @@
     android:gravity="center"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="com.yuminakamura.insta.SignUpActivity">
+    tools:context="com.yuminakamura.insta.activities.RegisterActivity">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/resister_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -26,7 +26,7 @@
 
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/resister_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -41,7 +41,7 @@
         />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/register_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -56,7 +56,7 @@
         />
 
     <EditText
-        android:id="@+id/confirm"
+        android:id="@+id/register_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -71,10 +71,12 @@
         />
 
     <Button
+        android:id="@+id/register_sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
         android:text="@string/signup"
         android:textAllCaps="false"
+        android:textSize="@dimen/text_size_middium"
         android:textColor="@color/white"/>
 </LinearLayout>
