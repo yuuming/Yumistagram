@@ -37,15 +37,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            username = (TextView) itemView.findViewById(R.id.username);
-            numLikes = (TextView) itemView.findViewById(R.id.numOfLikes);
-            textLikes = (TextView) itemView.findViewById(R.id.textlikes);
-            numComments = (TextView) itemView.findViewById(R.id.numOfcomments);
-            textComments = (TextView) itemView.findViewById(R.id.textComments);
-            userImage = (ImageView) itemView.findViewById(R.id.userimage);
-            timelineImage = (ImageView) itemView.findViewById(R.id.timeline_pic);
-            favoriteImage = (ImageView) itemView.findViewById(R.id.favIcon);
-            commentImage = (ImageView) itemView.findViewById(R.id.commentIcon);
+            username = (TextView) itemView.findViewById(R.id.user_name);
+            numLikes = (TextView) itemView.findViewById(R.id.num_of_likes);
+            textLikes = (TextView) itemView.findViewById(R.id.likes_text);
+            numComments = (TextView) itemView.findViewById(R.id.num_of_comments);
+            textComments = (TextView) itemView.findViewById(R.id.comments_text);
+            userImage = (ImageView) itemView.findViewById(R.id.user_image);
+            timelineImage = (ImageView) itemView.findViewById(R.id.timeline_image);
+            favoriteImage = (ImageView) itemView.findViewById(R.id.favorite_icon);
+            commentImage = (ImageView) itemView.findViewById(R.id.comment_icon);
             description = (TextView)itemView.findViewById(R.id.description);
 
 
