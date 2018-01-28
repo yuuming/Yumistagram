@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yuminakamura.insta.activities.TimelineActivity">
+    tools:context="com.yuminakamura.insta.activities.TimelineActivity"
+    android:weightSum="11">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:padding="10dp">
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1">
         <ImageView
             android:id="@+id/userimage"
             android:layout_width="wrap_content"
@@ -27,13 +29,15 @@
     <ImageView
         android:id="@+id/timeline_pic"
         android:layout_width="match_parent"
-        android:layout_height="380dp"
-        tools:src="@mipmap/ic_launcher" />
+        android:layout_height="0dp"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_weight="6"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:padding="10dp">
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1">
         <ImageView
             android:id="@+id/favIcon"
             android:layout_width="wrap_content"
@@ -49,38 +53,44 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1">
         <TextView
             android:id="@+id/numOfLikes"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/number"/>
         <TextView
             android:id="@+id/textlikes"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:text="@string/likes"/>
         <TextView
             android:id="@+id/numOfcomments"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:text="@string/number"/>
         <TextView
             android:id="@+id/textComments"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:text="@string/comments"/>
     </LinearLayout>
 
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:padding="10dp"
-            android:text="desctiption will be here! "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="desctiption will be here! "/>
+    </LinearLayout>
 </LinearLayout>

@@ -11,7 +11,7 @@ import android.widget.EditText;
 import com.yuminakamura.insta.R;
 
 
-public class SignUpActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     EditText username, email, password, confirmPassword;
     Button signUpBTN;
@@ -20,13 +20,13 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_register);
 
-        username = (EditText)findViewById(R.id.username);
-        email = (EditText)findViewById(R.id.email);
-        password = (EditText)findViewById(R.id.password);
-        confirmPassword = (EditText)findViewById(R.id.confirm);
-        signUpBTN = (Button)findViewById(R.id.sign_up);
+        username = (EditText)findViewById(R.id.resister_username);
+        email = (EditText)findViewById(R.id.resister_email);
+        password = (EditText)findViewById(R.id.register_password);
+        confirmPassword = (EditText)findViewById(R.id.register_confirm);
+        signUpBTN = (Button)findViewById(R.id.register_sign_up);
 
         usernameString = String.valueOf(username.getText());
         emailString = String.valueOf(email.getText());
@@ -36,7 +36,7 @@ public class SignUpActivity extends AppCompatActivity {
         signUpBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUpActivity.this,ProfileActivity.class);
+                Intent intent = new Intent(RegisterActivity.this,ProfileActivity.class);
                 startActivity(intent);
             }
         });

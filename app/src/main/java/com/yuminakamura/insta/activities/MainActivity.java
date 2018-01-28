@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import com.yuminakamura.insta.R;
 
-public class SignInActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private EditText usernameEdit, passwordEdit;
     private Button signinBTN,signupBTN;
@@ -17,10 +17,10 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_main);
 
-        signinBTN = (Button)findViewById(R.id.sign_in);
-        signupBTN = (Button)findViewById(R.id.sign_up);
+        signinBTN = (Button)findViewById(R.id.main_sign_in);
+        signupBTN = (Button)findViewById(R.id.main_sign_up);
 
 //        usernameString = String.valueOf(usernameEdit.getText());
 //        passwordString = String.valueOf(passwordEdit.getText());
@@ -28,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
         signinBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignInActivity.this,TimelineActivity.class);
+                Intent intent = new Intent(MainActivity.this,TimelineActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class SignInActivity extends AppCompatActivity {
         signupBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignInActivity.this,SignUpActivity.class);
+                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
                 startActivity(intent);
             }
         });

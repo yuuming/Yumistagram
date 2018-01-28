@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.yuminakamura.insta.R;
 
 import java.util.List;
@@ -19,7 +20,7 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 
     private List<TimeLine> timeLinelists;
-
+    public Context mContext;
 
     public MyAdapter(List<TimeLine> timeLinelists) {
         this.timeLinelists = timeLinelists;
@@ -30,7 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView username, numLikes, textLikes, numComments, textComments;
+        public TextView username, numLikes, textLikes, numComments, textComments, description;
         public ImageView userImage, timelineImage,favoriteImage, commentImage;
 
         public MyViewHolder(View itemView) {
@@ -45,6 +46,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
             timelineImage = (ImageView) itemView.findViewById(R.id.timeline_pic);
             favoriteImage = (ImageView) itemView.findViewById(R.id.favIcon);
             commentImage = (ImageView) itemView.findViewById(R.id.commentIcon);
+            description = (TextView)itemView.findViewById(R.id.description);
+
 
         }
     }
@@ -63,6 +66,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         holder.textLikes.setText("Likes");
         holder.numComments.setText(timeLinelists.get(position).getFeedBack().getComments());
         holder.textComments.setText("Comments");
+        holder.description.setText(timeLinelists.get(position).getDescription());
+
+
+        Picasso.with(holder.timelineImage.getContext()).load(timeLinelists.get(position).getImage()).into(holder.timelineImage);
+        Picasso.with(holder.userImage.getContext()).load(timeLinelists.get(position).getProfileImage()).into(holder.userImage);
+
 
     }
 

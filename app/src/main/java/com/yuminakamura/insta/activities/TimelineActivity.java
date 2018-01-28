@@ -2,6 +2,7 @@ package com.yuminakamura.insta.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.yuminakamura.insta.R;
@@ -14,15 +15,21 @@ import java.util.List;
 
 public class TimelineActivity extends AppCompatActivity {
 
-//    public ArrayList<TimeLine> timelineLists = DataSource.createDatas();
+    public ArrayList<TimeLine> timelineLists = DataSource.getTimeLineLists();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-//        MyAdapter adapter = new MyAdapter(timelineLists);
+
+        DataSource.createDatas();
+        MyAdapter adapter = new MyAdapter(timelineLists);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        recyclerView.setAdapter(adapter);
+
+
     }
 
-//    private List<TimeLine>
+
 }
