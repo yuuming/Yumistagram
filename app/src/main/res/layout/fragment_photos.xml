@@ -4,17 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.yuminakamura.insta.fragments.PhotosFragment">
 
-    <FrameLayout
-        android:id="@+id/framelayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <android.support.v7.widget.RecyclerView
             android:id="@+id/timeline_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            />
-    </FrameLayout>
+            android:scrollbars="vertical" />
 
 </FrameLayout>
