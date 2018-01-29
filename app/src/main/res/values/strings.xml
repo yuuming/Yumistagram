@@ -22,4 +22,13 @@
     <string name="likes">Likes </string>
     <string name="comments">Comments</string>
 
+    //Profile page
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

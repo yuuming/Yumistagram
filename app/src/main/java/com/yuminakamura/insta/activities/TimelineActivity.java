@@ -21,7 +21,7 @@ public class TimelineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.timeline_recycler_view);
 
         DataSource.createDatas();
         MyAdapter adapter = new MyAdapter(timelineLists);
