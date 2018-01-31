@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import com.yuminakamura.insta.R;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private EditText usernameEdit, passwordEdit;
     private Button signinBTN,signupBTN;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         signinBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,TimelineActivity.class);
+                Intent intent = new Intent(LoginActivity.this,TimelineActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         signupBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);
             }
         });
