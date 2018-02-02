@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yuminakamura.insta">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -19,8 +20,7 @@
         </activity>
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.TimelineActivity" />
-        <activity android:name=".activities.FriendsActivity" />
-        <activity android:name=".activities.ProfileActivity"></activity>
+        <activity android:name=".activities.UserActivity"></activity>
     </application>
 
 </manifest>

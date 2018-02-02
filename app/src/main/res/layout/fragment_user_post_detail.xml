@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuminakamura.insta.fragments.UserImageDetailFragment">
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person_black_24dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_image"
+        android:layout_alignTop="@id/user_image"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/user_image"
+        android:gravity="center_vertical"
+        android:text="@string/username"/>
+
+    <ImageView
+        android:id="@+id/timeline_image"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@id/user_image"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <ImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeline_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_favorite_border_black_24dp"/>
+
+    <ImageView
+        android:id="@+id/comment_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/favorite_icon"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/favorite_icon"
+        android:src="@drawable/ic_mode_comment_black_24dp"/>
+
+    <TextView
+        android:id="@+id/num_of_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/favorite_icon"
+        android:layout_below="@id/favorite_icon"
+        android:layout_marginTop="8dp"
+        android:text="@string/number"/>
+
+    <TextView
+        android:id="@+id/likes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/num_of_likes"
+        android:layout_marginEnd="4dp"
+        android:layout_toEndOf="@id/num_of_likes"
+        android:text="@string/likes"/>
+
+    <TextView
+        android:id="@+id/num_of_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/num_of_likes"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/likes_text"
+        android:text="@string/number"/>
+
+    <TextView
+        android:id="@+id/comments_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/num_of_likes"
+        android:layout_marginEnd="4dp"
+        android:layout_toEndOf="@id/num_of_comments"
+        android:text="@string/comments"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num_of_likes"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        tools:text="desctiption will be here! "/>
+
+</RelativeLayout>

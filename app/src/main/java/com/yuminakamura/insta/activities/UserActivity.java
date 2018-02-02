@@ -1,0 +1,23 @@
+package com.yuminakamura.insta.activities;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import com.yuminakamura.insta.R;
+import com.yuminakamura.insta.models.DataSource;
+import com.yuminakamura.insta.models.UserPost;
+
+
+import java.util.ArrayList;
+
+public class UserActivity extends AppCompatActivity {
+
+
+    public ArrayList<UserPost> userPostsLists = DataSource.getUserPostLists();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_user);
+
+
+    }
+}
