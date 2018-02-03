@@ -40,10 +40,16 @@ public class DataSource {
     };
 
     private static final String[] profileNames = {
+            "Alireza",
+            "Alireza",
+            "Alireza",
             "Alireza"
     };
 
     private static final String[] profileImage = {
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOT20ZAeTXOkB4_INObGdVCtPioyRL8Zel_u0DBvAIZ4h_UzC",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOT20ZAeTXOkB4_INObGdVCtPioyRL8Zel_u0DBvAIZ4h_UzC",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOT20ZAeTXOkB4_INObGdVCtPioyRL8Zel_u0DBvAIZ4h_UzC",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOT20ZAeTXOkB4_INObGdVCtPioyRL8Zel_u0DBvAIZ4h_UzC"
     };
 
@@ -53,9 +59,6 @@ public class DataSource {
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8HMlma6BuK-ssWuR5HpdsRSXSqsf_fxm3Bo5Pleq2rMxdl0T",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsRBh2ftIXuE3BdV3yccigTcxRE8gh_zI6CDtDzce9sJiLbqv5RA",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_XeoiR-eQVkM2UdqjORdCEx0WKPp-_EXjQTaoHvucDmKUOflNQ",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUZackeR6wcSepZ5-c_cFy1PkWL4eGthnmVy6uI-JMV__WB2Fwg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZebw8AeUTEIxFCdVhDU2354KCqCA5vRGN1ZvrUTS2WBzhR579",
-            "http://www.lovethispic.com/uploaded_images/90450-Vanessa-And-Zac.jpg",
     };
 
     private static String[] userPostTexts = {
@@ -63,9 +66,6 @@ public class DataSource {
             "beautiful day",
             "I am so hungry",
             "I miss him!",
-            "what to do...what to do..",
-            "tmr is a better day!",
-            "sleepy sleepy sleepy..zzzzzzzzzz",
     };
 
     public static ArrayList<TimeLine> getTimeLineLists() {
@@ -102,7 +102,7 @@ public class DataSource {
 
     public static void createUserPostDatas() {
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 4; i++) {
             Random rdm = new Random();
             String rmdNumLikes = Integer.toString((rdm.nextInt(50)));
             String rmdNumComments = Integer.toString((rdm.nextInt(50)));

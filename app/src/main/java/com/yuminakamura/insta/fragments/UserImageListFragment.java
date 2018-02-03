@@ -55,8 +55,9 @@ public class UserImageListFragment extends Fragment {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.profile_recycler_view);
         DataSource.createUserPostDatas();
-        recyclerView.setAdapter(new UserPostAdapter(userPostsLists));
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        recyclerView.setAdapter(new UserPostAdapter(userPostsLists));
+
 
     }
 
