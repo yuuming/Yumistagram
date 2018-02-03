@@ -5,7 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
 import com.yuminakamura.insta.R;
 
 import java.util.List;
@@ -15,21 +17,26 @@ import java.util.List;
  */
 public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyViewHolder>{
 
-    private List<UserPost> userPosts;
+    private List<UserPost> userPostlists;
     public Context mContext;
 
     public UserPostAdapter(List<UserPost> userPosts) {
-        this.userPosts = userPosts;
+
+        this.userPostlists = userPosts;
     }
 
     public void setUserPosts(List<UserPost> userPosts) {
-        this.userPosts = userPosts;
+
+        this.userPostlists = userPosts;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
+        public ImageView postImage;
 
         public MyViewHolder(View itemView) {
             super(itemView);
+
+            postImage = (ImageView) itemView.findViewById(R.id.post_image);
         }
     }
 
@@ -42,10 +49,11 @@ public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyView
 
     @Override
     public void onBindViewHolder(UserPostAdapter.MyViewHolder holder, int position) {
+        Picasso.with(holder.postImage.getContext()).load(userPostlists.get(position).getImage()).into(holder.postImage);
     }
 
     @Override
     public int getItemCount() {
-        return userPosts.size();
+        return userPostlists.size();
     }
 }
