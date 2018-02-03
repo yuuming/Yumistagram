@@ -20,6 +20,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     public ArrayList<TimeLine> timelineLists = DataSource.getTimeLineLists();
     ImageView profileIcon;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,14 +33,17 @@ public class TimelineActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setAdapter(adapter);
 
-    profileIcon = (ImageView)findViewById(R.id.profileIcon);
+        profileIcon = (ImageView) findViewById(R.id.profileIcon);
 
-    profileIcon.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(TimelineActivity.this,UserActivity.class);
-            startActivity(intent);
-        }
-    });
+        profileIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimelineActivity.this, UserActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
+
 }

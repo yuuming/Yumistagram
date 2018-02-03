@@ -45,16 +45,19 @@ public class UserImageListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_post_list, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_user_post_list, container, false);
+        return rootView;
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.profile_recycler_view);
+        DataSource.createUserPostDatas();
         recyclerView.setAdapter(new UserPostAdapter(userPostsLists));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+
     }
 
     public interface userImageSelected {
