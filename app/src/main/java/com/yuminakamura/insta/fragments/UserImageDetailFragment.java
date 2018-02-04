@@ -19,7 +19,6 @@ public class UserImageDetailFragment extends Fragment {
 
     public ArrayList<UserPost> userPostsLists = DataSource.getUserPostLists();
 
-    private OnFragmentInteractionListener mListener;
 
     public UserImageDetailFragment() {
         // Required empty public constructor
@@ -47,14 +46,5 @@ public class UserImageDetailFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_user_post_detail, container, false);
     }
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        DataSource.createUserPostDatas();
-    }
 
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
 }
