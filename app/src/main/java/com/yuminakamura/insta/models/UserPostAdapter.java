@@ -9,13 +9,14 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 import com.yuminakamura.insta.R;
+import com.yuminakamura.insta.fragments.UserImageListFragment;
 
 import java.util.List;
 
 /**
  * Created by yuminakamura on 2018-01-24.
  */
-public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyViewHolder>{
+public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyViewHolder> {
 
     private List<UserPost> userPostlists;
     public Context mContext;
@@ -40,6 +41,7 @@ public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyView
         }
     }
 
+
     @Override
     public UserPostAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user_post, parent,false);
@@ -50,6 +52,7 @@ public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyView
     @Override
     public void onBindViewHolder(UserPostAdapter.MyViewHolder holder, int position) {
         Picasso.with(holder.postImage.getContext()).load(userPostlists.get(position).getImage()).into(holder.postImage);
+
     }
 
     @Override

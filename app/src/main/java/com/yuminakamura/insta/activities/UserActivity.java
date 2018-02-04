@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 
 import com.yuminakamura.insta.R;
+import com.yuminakamura.insta.fragments.UserImageDetailFragment;
 import com.yuminakamura.insta.fragments.UserImageListFragment;
 import com.yuminakamura.insta.models.DataSource;
 import com.yuminakamura.insta.models.UserPost;
@@ -12,7 +13,9 @@ import com.yuminakamura.insta.models.UserPost;
 
 import java.util.ArrayList;
 
-public class UserActivity extends AppCompatActivity {
+public class UserActivity extends AppCompatActivity implements UserImageListFragment.userImageSelected {
+
+    public ArrayList<UserPost> userPostsLists = DataSource.getUserPostLists();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,4 +31,13 @@ public class UserActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void userImageSelected() {
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, UserImageDetailFragment.newInstance(), "imageDetail")
+                .addToBackStack(null)
+                .commit();
+    }
 }
