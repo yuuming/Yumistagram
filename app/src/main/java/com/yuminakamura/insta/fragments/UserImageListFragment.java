@@ -64,12 +64,11 @@ public class UserImageListFragment extends Fragment {
             @Override
             public void onClick(View view, int position) {
                 UserPost userPost = userPostsLists.get(position);
-
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 UserImageDetailFragment fragment = new UserImageDetailFragment();
                 Bundle bundle = new Bundle();
-                bundle.putInt("selected", position);
+                bundle.putSerializable("userpost", userPost);
                 fragment.setArguments(bundle);
                 transaction.replace(R.id.fragment_container, fragment);
                 transaction.addToBackStack(null);//前のfragmentへもどるのに必要

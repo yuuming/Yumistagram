@@ -1,10 +1,12 @@
 package com.yuminakamura.insta.models;
 
+import java.io.Serializable;
+
 /**
  * Created by yuminakamura on 2018-02-01.
  */
 
-public class UserPost {
+public class UserPost implements Serializable {
     private String username;
     private String profileImage;
     private String image;

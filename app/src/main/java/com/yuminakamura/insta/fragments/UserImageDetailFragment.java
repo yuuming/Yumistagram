@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +17,7 @@ import java.util.ArrayList;
 
 public class UserImageDetailFragment extends Fragment {
 
-
-    public ArrayList<UserPost> userPostsLists = DataSource.getUserPostLists();
-
-
+    UserPost userPost;
     public UserImageDetailFragment() {
         // Required empty public constructor
     }
@@ -36,6 +34,8 @@ public class UserImageDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+            userPost = (UserPost)getArguments().getSerializable("userpost");
+//            Log.d("UserImageDetailFragment", userPost.getDescription());
 
         }
     }
