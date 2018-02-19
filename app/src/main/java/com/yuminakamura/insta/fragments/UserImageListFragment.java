@@ -66,7 +66,7 @@ public class UserImageListFragment extends Fragment {
                 UserPost userPost = userPostsLists.get(position);
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                UserImageDetailFragment fragment = new UserImageDetailFragment();
+                UserImageDetailFragment fragment = UserImageDetailFragment.newInstance();
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("userpost", userPost);
                 fragment.setArguments(bundle);

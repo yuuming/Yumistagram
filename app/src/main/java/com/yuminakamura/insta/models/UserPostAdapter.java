@@ -2,6 +2,7 @@ package com.yuminakamura.insta.models;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,16 +19,11 @@ import java.util.List;
  */
 public class UserPostAdapter extends RecyclerView.Adapter<UserPostAdapter.MyViewHolder> {
 
+    private static final String TAG = UserPostAdapter.class.getSimpleName();
     private List<UserPost> userPostlists;
     public Context mContext;
 
     public UserPostAdapter(List<UserPost> userPosts) {
-
-        this.userPostlists = userPosts;
-    }
-
-    public void setUserPosts(List<UserPost> userPosts) {
-
         this.userPostlists = userPosts;
     }
 
