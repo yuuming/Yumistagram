@@ -20,7 +20,9 @@
         </activity>
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.TimelineActivity" />
-        <activity android:name=".activities.UserActivity"></activity>
+        <activity
+            android:name=".activities.UserActivity"
+            android:label="@string/title_activity_user"></activity>
     </application>
 
 </manifest>

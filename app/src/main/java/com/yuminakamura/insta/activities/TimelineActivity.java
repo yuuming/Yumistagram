@@ -14,7 +14,6 @@ import com.yuminakamura.insta.models.MyAdapter;
 import com.yuminakamura.insta.models.TimeLine;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class TimelineActivity extends AppCompatActivity {
 
