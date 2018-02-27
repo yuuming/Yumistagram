@@ -15,6 +15,13 @@ import com.yuminakamura.insta.models.UserPost;
 
 import java.util.ArrayList;
 
+/**
+ * TODO tab idou
+ * friends gamen
+ * account gamen
+ * kamera kidou
+ * login wo firebase
+ */
 public class UserActivity extends AppCompatActivity implements UserImageListFragment.userImageSelected{
 
     private TextView mTextMessage;
@@ -57,7 +64,6 @@ public class UserActivity extends AppCompatActivity implements UserImageListFrag
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-//                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_friends:
 //                    mTextMessage.setText(R.string.title_dashboard);
